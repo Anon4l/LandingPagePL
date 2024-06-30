@@ -1,0 +1,49 @@
+#sobre{
+    margin-top: 10vh;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.quem{
+    background-color: #F2B705;
+    border-radius: 16px;
+    padding: 8px;
+    padding-left: 16px;
+    font-size: 3em;
+    color: white;
+    font-weight: 400;
+}
+
+.conteudo{
+    margin-top: 8vh;
+}
+
+.conteudo1{
+    display: flex;
+    font-size: 2.15em;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.conteudo1 p{
+    margin-left: 50px;
+
+}
+
+.conteudo2{
+    margin-top: 5vh;
+    display: flex;
+    font-size: 2.15em;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.conteudo2 p{
+    margin-right: 50px;
+}
+
+
