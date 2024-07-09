@@ -1,12 +1,20 @@
-<nav class="navbar">
-    <div class="logo">
-      <img src="../../../assets/logo.png" alt="logo">
+<header>
+  <div class="logo">
+    <a href="#home" (click)="scrollTo($event, 'home')"><img src="../../../assets/logo.png" alt="logo"></a>
+  </div>
+  <nav id="navbar">
+    <input type="checkbox" name="menu-trigger" id="menu-trigger">
+    <div id="menu-lines">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
     <ul class="links">
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">SOBRE MIM</a></li>
+      <li id="home-link"><a href="#home" (click)="scrollTo($event, 'home')">HOME</a></li>
+      <li id="sobre-link"><a href="sobre" (click)="scrollTo($event, 'sobre')">SOBRE MIM</a></li>
       <li><a href="#">PROPOSTAS</a></li>
       <li><a href="#">DEPOIMENTOS</a></li>
       <li><a href="#">CONTATO</a></li>
     </ul>
   </nav>
+</header>
