@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
-
+export class HomeComponent implements AfterViewInit {
+  ngAfterViewInit() {
+    const elements = document.querySelectorAll('.apresentacao, .img');
+    elements.forEach(el => {
+      el.classList.add('visible');
+    });
+  }
 }
