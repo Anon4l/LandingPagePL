@@ -101,6 +101,31 @@ img {
     }
 }
 
+/* Tablets Maiores */
+@media screen and (max-width: 835px) {
+    #home {
+        margin-top: 11vh;
+    }
+
+    h1 {
+        margin-top: 6vh;
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    .cargo {
+        background-color: #F2B705;
+        padding: 8px;
+        padding-left: 16px;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        font-weight: 500;
+        color: white;
+    }
+}
+
+
 /* Tablet */
 @media screen and (max-width: 769px) {
     #home {
@@ -154,6 +179,15 @@ img {
     img {
         width: 100%;
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    h1 {
+        margin-top: 48px;
+        font-weight: 600;
+        font-size: 2.2rem;
+        color: white;
     }
 }
 

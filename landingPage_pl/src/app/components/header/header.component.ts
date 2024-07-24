@@ -24,17 +24,32 @@ export class HeaderComponent implements OnInit, OnDestroy {
   onClickOutside(event: Event) {
     const nav = document.getElementById('navbar');
     const menuTrigger = document.getElementById('menu-trigger') as HTMLInputElement;
-    if (nav && menuTrigger && !nav.contains(event.target as Node) && !menuTrigger.contains(event.target as Node)) {
+    const overlay = document.getElementById('overlay');
+    const target = event.target as Node;
+
+    if (nav && menuTrigger && !nav.contains(target) && !menuTrigger.contains(target)) {
       menuTrigger.checked = false;
+      if (overlay) {
+        overlay.style.display = 'none';
+      }
+    } else if (menuTrigger.checked) {
+      if (overlay && overlay.style.display === 'none') {
+        overlay.style.display = 'block';
+      }
     }
   }
 
+
   highlightMenuItem() {
     const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    let offsetDistance = 650;
+    if (window.innerWidth < 450) {
+      offsetDistance = 300;
+    }
     this.sections.forEach(section => {
       const sectionElement = document.getElementById(section.id);
       if (sectionElement) {
-        const sectionTop = sectionElement.offsetTop - 650;
+        const sectionTop = sectionElement.offsetTop - offsetDistance;
         const sectionHeight = sectionElement.offsetHeight;
         const linkElement = document.getElementById(section.linkId);
 
@@ -53,6 +68,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     if (targetElement) {
       const targetOffset = targetElement.offsetTop;
       this.smoothScrollTo(0, targetOffset - 150);
+      this.closeMenu();
     }
   }
 
@@ -60,27 +76,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
     const menuTrigger = document.getElementById('menu-trigger') as HTMLInputElement;
     if (menuTrigger) {
       menuTrigger.checked = false;
-    }
-  }
-
-  clicou(): void {
-    const menu = document.getElementById('navbar');
-    if (menu) {
-      if (menu.style.display === "none" || menu.style.display === "") {
-        menu.style.display = "flex";
-      } else {
-        menu.style.display = "none";
-      }
-    }
-  }
-
-  mudouTamanho = () => {
-    const itens = document.getElementById('navbr');
-    if (itens) {
-      if (window.innerWidth <= 768) {
-        itens.style.display = 'flex';
-      } else {
-        itens.style.display = 'none';
+      const overlay = document.getElementById('overlay');
+      if (overlay) {
+        overlay.style.display = 'none';
       }
     }
   }
@@ -90,35 +88,25 @@ export class HeaderComponent implements OnInit, OnDestroy {
     const startY = window.scrollY || window.pageYOffset;
     const distanceX = endX - startX;
     const distanceY = endY - startY;
-    const startTime = new Date().getTime();
+    let startTime: number;
 
-    const easeInOutQuart = (time: number, from: number, distance: number, duration: number): number => {
-      if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
-      return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
-    };
-
-    const scroll = () => {
-      const currentTime = new Date().getTime();
-      const timeElapsed = currentTime - startTime;
-      const nextX = easeInOutQuart(timeElapsed, startX, distanceX, duration);
-      const nextY = easeInOutQuart(timeElapsed, startY, distanceY, duration);
-      if (timeElapsed < duration) {
-        window.scrollTo(nextX, nextY);
-        requestAnimationFrame(scroll);
-      } else {
-        window.scrollTo(endX, endY);
+    const step = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const easeProgress = 0.5 * (1 - Math.cos(Math.PI * progress));
+      window.scrollTo(startX + distanceX * easeProgress, startY + distanceY * easeProgress);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
       }
     };
 
-    scroll();
+    window.requestAnimationFrame(step);
   }
 
   ngOnInit(): void {
-    window.addEventListener('resize', this.mudouTamanho);
-    this.mudouTamanho();
+    this.highlightMenuItem();
   }
 
   ngOnDestroy(): void {
-    window.removeEventListener('resize', this.mudouTamanho);
   }
 }

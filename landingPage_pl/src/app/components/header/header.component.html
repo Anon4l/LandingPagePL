@@ -5,17 +5,19 @@
   </div>
   <nav id="navbar">
     <input type="checkbox" name="menu-trigger" id="menu-trigger">
-    <div id="menu-lines">
+    <label for="menu-trigger" id="menu-lines">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </label>
     <ul class="links">
+      <div class="menu-logo"><img class="img-logo" src="../../../assets/logo.png" alt="logo"></div>
       <li id="home-link"><a href="#home" (click)="scrollTo($event, 'home')">HOME</a></li>
-      <li id="sobre-link"><a href="sobre" (click)="scrollTo($event, 'sobre')">SOBRE MIM</a></li>
+      <li id="sobre-link"><a href="#sobre" (click)="scrollTo($event, 'sobre')">SOBRE MIM</a></li>
       <li><a href="#">PROPOSTAS</a></li>
       <li><a href="#">DEPOIMENTOS</a></li>
       <li><a href="#">CONTATO</a></li>
     </ul>
+    <div id="overlay"  (click)="closeMenu()"></div> 
   </nav>
 </header>
