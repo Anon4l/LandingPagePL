@@ -26,15 +26,38 @@ export class HeaderComponent implements OnInit, OnDestroy {
     const menuTrigger = document.getElementById('menu-trigger') as HTMLInputElement;
     const overlay = document.getElementById('overlay');
     const target = event.target as Node;
-
-    if (nav && menuTrigger && !nav.contains(target) && !menuTrigger.contains(target)) {
-      menuTrigger.checked = false;
-      if (overlay) {
-        overlay.style.display = 'none';
+  
+    if (menuTrigger) {
+      if (nav && !nav.contains(target) && !menuTrigger.contains(target)) {
+        menuTrigger.checked = false;
+        if (overlay) {
+          overlay.style.display = 'none';
+        }
+      } else {
+        if (menuTrigger.checked) {
+          if (overlay) {
+            overlay.style.display = 'block';
+          }
+        } else {
+          if (overlay) {
+            overlay.style.display = 'none';
+          }
+        }
       }
-    } else if (menuTrigger.checked) {
-      if (overlay && overlay.style.display === 'none') {
+    }
+  }
+  
+ 
+  @HostListener('document:change', ['$event'])
+  onMenuChange(event: Event) {
+    const menuTrigger = document.getElementById('menu-trigger') as HTMLInputElement;
+    const overlay = document.getElementById('overlay');
+  
+    if (menuTrigger && overlay) {
+      if (menuTrigger.checked) {
         overlay.style.display = 'block';
+      } else {
+        overlay.style.display = 'none';
       }
     }
   }
