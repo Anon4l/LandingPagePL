@@ -1,0 +1,85 @@
+
+.politico-container {
+  text-align: center;
+  align-items: center;
+  padding-top: 5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/backgroundadriano.png); 
+  background-size: cover;
+  color: white;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s, transform 0.5s;
+  padding-bottom: 12rem;
+  background-position: center;
+}
+  
+  .politico-container h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 3rem;
+  }
+  
+  .politico-container p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+.card {
+    background: #1E3A8A; /* Blue background for cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: calc(25.333% - 40px); /* Three cards per row, minus the gap */
+    height: auto;
+    color: white;
+  }
+  
+  .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .icon-background {
+    background: #f2b705; /* Yellow background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the yellow square */
+    font-size: 40px;
+  }
+  
+  .card h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1200px) {
+    .card {
+      width: calc(50% - 40px); /* Two cards per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(100% - 40px); /* One card per row */
+    }
+  }

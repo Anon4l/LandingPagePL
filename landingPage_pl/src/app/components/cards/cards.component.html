@@ -1,0 +1,13 @@
+<div class="politico-container">
+  <h2>O Trabalho de Adriano na Câmara Municipal</h2>
+  <p>Na Câmara Municipal, Adriano Piemonte tem se destacado por seu trabalho incansável e eficaz:</p>
+  <div class="cards-grid">
+    <div class="card" *ngFor="let proposta of propostas">
+      <b><h2>{{ proposta.title }}</h2></b>
+      <div class="card-icon">
+        <div class="icon-background">{{ proposta.icone }}</div>
+      </div>
+      <h3>LER MAIS</h3>
+    </div>
+  </div>
+</div>

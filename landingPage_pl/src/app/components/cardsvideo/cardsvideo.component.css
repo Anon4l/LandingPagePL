@@ -1,0 +1,77 @@
+
+.videos-container {
+    text-align: center;
+    padding: 20px;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    opacity: 0; /* Start with hidden */
+    transform: translateY(20px); /* Start with translated position */
+}
+
+
+.videos-container h1 {
+    color: black; /* Darker color for text on white background */
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.videos-container h2 {
+    color: #333; /* Darker color for text on white background */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.videos-container h2 span {
+    
+    font-weight: bold;
+}
+
+.videos-grid {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-card {
+    background: #e0e0e0; /* Light grey background for cards */
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 40px); /* Three cards per row, minus the gap */
+    height:20rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+}
+
+.video-card:hover {
+   -webkit-animation: scale 0.3s;
+    animation: scale 0.3s;
+   box-shadow: 0 4px 60px rgba(0, 0, 0, 0.70);
+}
+
+.video-title {
+    font-size: 16px;
+    color: #333; /* Darker color for text */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.video-description {
+    font-size: 14px;
+    color: #333; /* Darker color for text */
+}
+
+.img-video {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 20px;
+}
+.img-video:hover {
+    -webkit-transform: scale(1.05);
+}
