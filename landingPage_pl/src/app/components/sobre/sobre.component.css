@@ -1,49 +1,66 @@
 #sobre {
-    margin-top: 10vh;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-top: 10.125rem;
+    margin-left: 2.5.75rem;
+    margin-right: 4.75rem;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
 }
 
-.quem {
+span{
     background-color: #F2B705;
     border-radius: 16px;
     padding: 8px;
     padding-left: 16px;
-    font-size: 3em;
+    font-size: 3.125rem;
     color: white;
     font-weight: 400;
 }
 
+p{
+    font-size: 2.188rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
 .conteudo {
-    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.625rem;
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.fotos img {
+    margin-left: 3rem;
+    width: 40%;
+    height: 70vh;
 }
 
 .conteudo1 {
     display: flex;
-    font-size: 2.15em;
-    text-align: justify;
-    font-weight: 400;
-}
-
-.conteudo1 p {
-    margin-left: 50px;
-
+    flex-direction: column;
+    margin-bottom: 4.625rem;
 }
 
 .conteudo2 {
-    margin-top: 5vh;
+    margin-top: 4.625rem;
+    margin-bottom: 4.625rem;
     display: flex;
-    font-size: 2.15em;
-    text-align: justify;
-    font-weight: 400;
 }
 
-.conteudo2 p {
-    margin-right: 50px;
+.conteudo3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.625rem;
 }
 
 .fade-in {
@@ -74,26 +91,27 @@
 /* Telas Pequenas */
 @media screen and (max-width: 1025px) {
     #sobre {
-        margin-top: 10vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: flex-start;
+        margin-top: 8rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 
-    .quem {
-        background-color: #F2B705;
-        border-radius: 16px;
-        padding: 8px;
-        padding-left: 16px;
-        font-size: 2.5em;
-        color: white;
-        font-weight: 400;
+    span{
+        font-size: 2.5rem;
     }
 
-    img {
-        width: 400px;
-        height: 435px;
+    p{
+        font-size: 1.8rem;
+    }
+    
+    .conteudo {
+        margin-top: 4rem;
+    }
+    
+    .fotos img {
+        margin-left: 2rem;
+        width: 40%;
+        height: 50vh;
     }
 
     .conteudo {
@@ -101,153 +119,109 @@
     }
 
     .conteudo1 {
-        display: flex;
-        font-size: 1.8em;
-        text-align: justify;
-        font-weight: 400;
+        margin-bottom: 4rem;
     }
-
-    .conteudo1 p {
-        margin-left: 50px;
-
-    }
-
+    
     .conteudo2 {
-        margin-top: 5vh;
-        display: flex;
-        font-size: 1.8em;
-        text-align: justify;
-        font-weight: 400;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
-
-    .conteudo2 p {
-        margin-right: 50px;
+    
+    .conteudo3 {
+        margin-top: 4rem;
     }
 }
 
 /* Tablet */
 @media screen and (max-width: 769px) {
     #sobre {
-        margin-top: 9vh;
+        margin-top: 6rem;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
-    .quem {
-        background-color: #F2B705;
-        border-radius: 8px;
-        padding: 8px 10px 8px 10px;
-        font-size: 1.8rem;
-        color: white;
-        font-weight: 400;
+    span{
+        font-size: 1.4rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+    
+    .conteudo {
+        margin-top: 2.5rem;
+    }
+    
+    .fotos img {
+        margin-left: 2.5rem;
+        width: 40%;
+        height: 35vh;
     }
 
     .conteudo {
-        margin-top: 3vh;
-        ;
-        display: flex;
-        flex-direction: column;
-    }
-
-    img {
-        width: 250px;
-        height: 285px;
+        margin-top: 2.5rem;
     }
 
     .conteudo1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1rem;
-        text-align: justify;
-        font-weight: 400;
+        margin-bottom: 2.5rem;
     }
-
-    .conteudo1 p {
-        margin-top: 2vh;
-        margin-left: 0px;
-    }
-
+    
     .conteudo2 {
-        margin-top: 5vh;
-        margin-right: 0px;
-        margin-left: 0px;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        font-size: 1rem;
-        text-align: justify;
-        font-weight: 400;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
     }
-
-    .conteudo2 p {
-        margin-top: 2vh;
-        margin-right: 0;
+    
+    .conteudo3 {
+        margin-top: 2.5rem;
     }
 }
 
 /* Celular */
 @media screen and (max-width: 431px) {
     #sobre {
-        margin-top: 9vh;
+        margin-top: 4rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
-    .quem {
-        background-color: #F2B705;
-        border-radius: 8px;
-        padding: 8px 10px 8px 10px;
+    span{
         font-size: 1rem;
-        color: white;
-        font-weight: 400;
-        width: 262px;
+    }
+
+    p{
+        font-size: 0.75rem;
+    }
+    
+    .conteudo {
+        margin-top: 2rem;
+    }
+    
+    .fotos img {
+        margin-left: 2rem;
+        width: 144px;
+        height: 179px;
     }
 
     .conteudo {
-        margin-top: 3vh;
-        ;
-        display: flex;
-        flex-direction: column;
-    }
-
-    img {
-        width: 150px;
-        height: 185px;
+        margin-top: 2.5rem;
     }
 
     .conteudo1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 0.75rem;
-        text-align: justify;
-        font-weight: 400;
+        margin-bottom: 2.5rem;
     }
-
-    .conteudo1 p {
-        margin-top: 2vh;
-        margin-left: 0px;
-    }
-
+    
     .conteudo2 {
-        margin-top: 5vh;
-        margin-right: 0px;
-        margin-left: 0px;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        font-size: 0.75rem;
-        text-align: justify;
-        font-weight: 400;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
     }
-
-    .conteudo2 p {
-        margin-top: 2vh;
-        margin-right: 0;
+    
+    .conteudo3 {
+        margin-top: 2.5rem;
     }
 }
