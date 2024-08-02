@@ -1,0 +1,349 @@
+#compromisso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 2.875rem;
+    font-family: 'Poppins';
+    margin-top: 6.563rem;
+    margin-bottom: 3rem;
+}
+
+p{
+    font-size: 2.188rem;
+    font-weight: 400;
+    margin-left: 5.25rem;
+    margin-right: 5.25rem;
+    margin-bottom: 7.75rem;
+    text-align: justify;
+}
+
+.porque{
+    font-size: 2.7vw;
+    font-weight: 400;
+    padding: 12px;
+    margin-bottom: 2.875rem;
+    background-color: #F2B705;
+    border-radius: 16px;
+    color: white;
+}
+
+p.oferece{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.oferecimentos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.itens-oferecimentos{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding-left: 24.375rem;
+    padding-right: 24.375rem;
+}
+
+h2{
+    font-size: 1.625rem;
+    font-family: 'Poppins';
+}
+
+.borda{
+    border: 3px solid black;
+    border-radius: 16px;
+    padding: 12px;
+    height: 130px;
+}
+
+
+
+.itens-p{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+
+.itens-text{
+    display: flex;
+    padding-left: 1.125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.futuro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7.625rem;
+    padding-right: 7.625rem;
+    margin-top: 13.25rem;
+    margin-bottom: 9.688rem;
+}
+
+
+.futuro-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+}
+
+.futuro-p{
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Poppins';
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(-80px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Telas Pequenas */
+@media screen and (max-width: 1025px) {
+    h1{
+        font-size: 2.5rem;
+        margin-top: 6.563rem;
+        margin-bottom: 3rem;
+    }
+    
+    p{
+        font-size: 1.9rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 7rem;
+    }
+    
+    .porque{
+        font-size: 3.5vw;
+        margin-bottom: 2.875rem;
+    }
+    
+    p.oferece{
+        font-size: 1.9em;
+    }
+    
+    .itens-oferecimentos{
+        padding-left: 18rem;
+        padding-right: 18rem;
+    }
+    
+    h2{
+        font-size: 1.425rem;
+        font-family: 'Poppins';
+    }
+    
+    .borda{
+        border: 3px solid black;
+        border-radius: 16px;
+        padding: 12px;
+        height: 130px;
+    }
+    
+    .itens-p{
+        font-size: 1.1rem;
+    }
+    
+    
+    .itens-text{
+        padding-left: 1.125rem;
+    }
+    
+    .futuro{
+        padding-left: 3.625rem;
+        padding-right: 3.625rem;
+        margin-top: 13.25rem;
+        margin-bottom: 9.688rem;
+    }
+
+    .futuro img{
+        width: 500px;
+        height: 500px;
+    }
+    
+    
+    h3{
+        font-size: 1.6rem;
+        margin-bottom: 2.2rem;
+    
+    }
+    
+    .futuro-p{
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 769px) {
+    h1{
+        font-size: 2rem;
+        margin-top: 6.563rem;
+        margin-bottom: 3rem;
+    }
+    
+    p{
+        font-size: 1.4rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 7rem;
+    }
+    
+    .porque{
+        font-size: 3.5vw;
+        margin-bottom: 2.875rem;
+    }
+    
+    p.oferece{
+        font-size: 1.3em;
+    }
+    
+    .itens-oferecimentos{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .borda img{
+        width: 70px;
+        height: 70px;
+    }
+    
+    h2{
+        font-size: 1.2rem;
+    }
+    
+    .borda{
+        border: 3px solid black;
+        border-radius: 16px;
+        padding: 12px;
+        height: 100px;
+    }
+    
+    .itens-p{
+        font-size: 0.9rem;
+    }
+    
+    
+    .itens-text{
+        padding-left: 1.125rem;
+    }
+    
+    .futuro{
+        padding-left: 1.1rem;
+        padding-right: 1.1em;
+        margin-top: 13.25rem;
+        margin-bottom: 9.688rem;
+    }
+
+    .futuro img{
+        width: 80%;
+        height: 60vw;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+        margin-bottom: 2.2rem;
+        
+    }
+    
+    .futuro-p{
+        font-size: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 431px) {
+    h1{
+        font-size: 1.2rem;
+    }
+    
+    p{
+        font-size: 1rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        margin-bottom: 4rem;
+    }
+    
+    p.oferece{
+        font-size: 0.8em;
+    }
+    
+    .itens-oferecimentos{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .borda img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    h2{
+        font-size: 0.8rem;
+    }
+    
+    .borda{
+        height: 70px;
+    }
+    
+    .itens-p{
+        font-size: 0.6rem;
+    }
+    
+    
+    .futuro{
+        padding-left: 0.6rem;
+        padding-right: 0.6em;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    .futuro img{
+        width: 80%;
+        height: 60vw;
+    }
+    
+    h3{
+        font-size: 0.8rem;
+        margin-bottom: 1.8rem;
+        
+    }
+    
+    .futuro-p{
+        font-size: 0.6rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
