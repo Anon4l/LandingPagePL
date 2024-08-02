@@ -36,20 +36,6 @@ h2 {
     margin-top: 2rem;
 }
 
-.uptext {
-    font-weight: 600;
-    font-size: 3em;
-    color: white;
-}
-.subtext {
-    font-weight: 400;
-    font-size: 2em;
-    color: white;
-}
-.break {
-    height: 20px;
-}
-
 .conteudo {
     display: flex;
     flex-direction: column;
@@ -60,7 +46,7 @@ span {
     background-color: #F2B705;
     padding: 8px;
     padding-left: 16px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     border-radius: 16px;
     font-weight: 500;
     color: white;
@@ -99,6 +85,13 @@ img {
 .img.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+@media screen and (max-width: 1350px) {
+    span{
+        font-size: 1.8rem;
+    }
 }
 
 
@@ -180,6 +173,13 @@ img {
     }
 }
 
+@media screen and (max-width: 964px
+) {
+    span{
+        font-size: 1.6rem;
+    }
+}
+
 /* Tablets Maiores */
 @media screen and (max-width: 835px) {
     #home {
@@ -192,6 +192,35 @@ img {
         font-size: 2.5rem;
         color: white;
     }
+
+    .apresentacao {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        justify-content: space-between;
+    }
+
+    span {
+        padding-left: 16px;
+        font-size: 1.3rem;
+        border-radius: 16px;
+        font-weight: 500;
+        color: white;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .img {
+        width: 35%;
+        height: 50vh;
+    }
+    
+    img {
+        width: 100%;
+        height: 70%;
+    }
+
 
 }
 
@@ -293,12 +322,6 @@ img {
         font-size: 2.2rem;
         color: white;
     }
-    .uptext{
-        font-size: 2.5rem;
-        padding-right: 6rem;
-        padding-left: 6rem;
-    }
-
 }
 
 
@@ -307,7 +330,7 @@ img {
     #home {
         display: flex;
         flex-direction: column;
-        margin-top: 12vh;
+        margin-top: 11vh;
         justify-content: center;
         align-items: center;
     }

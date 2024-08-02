@@ -1,6 +1,6 @@
 #sobre {
     margin-top: 10.125rem;
-    margin-left: 2.5.75rem;
+    margin-left: 4.75rem;
     margin-right: 4.75rem;
     display: flex;
     flex-direction: column;
@@ -40,9 +40,12 @@ p{
 }
 
 .fotos img {
-    margin-left: 3rem;
     width: 40%;
     height: 70vh;
+}
+
+.margin-img {
+    margin-left: 3rem;
 }
 
 .conteudo1 {
@@ -109,9 +112,12 @@ p{
     }
     
     .fotos img {
-        margin-left: 2rem;
         width: 40%;
         height: 50vh;
+    }
+
+    .margin-img {
+        margin-left: 2rem;
     }
 
     .conteudo {
@@ -156,9 +162,12 @@ p{
     }
     
     .fotos img {
-        margin-left: 2.5rem;
         width: 40%;
         height: 35vh;
+    }
+
+    .margin-img {
+        margin-left: 2.5rem;
     }
 
     .conteudo {
@@ -203,9 +212,12 @@ p{
     }
     
     .fotos img {
-        margin-left: 2rem;
         width: 144px;
         height: 179px;
+    }
+
+    .margin-img {
+        margin-left: 1rem;
     }
 
     .conteudo {
@@ -223,5 +235,12 @@ p{
     
     .conteudo3 {
         margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+
+    span{
+        font-size: 0.8rem;
     }
 }

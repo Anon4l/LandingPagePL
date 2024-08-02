@@ -21,7 +21,7 @@ header {
   width: 20%;
   height: 12vh;
   margin: 20px;
-  margin-left: 30px;
+  margin-left: 40px;
   border-radius: 16px;
   background-color: white;
   text-align: center;
@@ -135,7 +135,7 @@ input {
 
   .links a:hover {
     color: #F2B705;
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-weight: 700;
   }
 }
@@ -205,7 +205,7 @@ input {
 
   .links a:hover {
     color: #F2B705;
-    font-size: 1.4em;
+    font-size: 1.3rem;
     font-weight: 700;
   }
 }
@@ -229,10 +229,6 @@ input {
     flex-direction: column;
     align-items: flex-end;
     width: 30%;
-  }
-  
-  .gambiarra {
-    width: 13rem;
   }
   
   .links {
@@ -340,6 +336,8 @@ input {
   #menu-lines {
     z-index: 998;
     width: 35px;
+    margin-top: 1rem;
+    margin-right: 1rem;
     cursor: pointer;
   }
   
@@ -393,10 +391,6 @@ input {
     width: 30%;
   }
 
-  .gambiarra{
-    width: 95px;
-  }
-
   .links {
     position: absolute;
     top: 0;
@@ -416,7 +410,7 @@ input {
 
   .logo {
     width: 30%;
-    height: 8vh;
+    height: 7vh;
     border-radius: 8px;
     background-color: white;
   }
@@ -504,6 +498,8 @@ input {
   #menu-lines {
     z-index: 998;
     width: 35px;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
     cursor: pointer;
   }
 
