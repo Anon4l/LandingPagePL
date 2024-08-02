@@ -104,7 +104,7 @@
 
     #contato-2>p {
         color: white;
-        font-size: 21px;
+        font-size: 16px;
     }
 
     #contato-2>ul {
@@ -222,7 +222,7 @@
         align-items: top;
         color: white;
         margin-left: 1px;
-        font-size: 21px;
+        font-size: 18px;
     }
 
     
@@ -411,7 +411,7 @@
         align-items: center;
         color: white;
         margin-left: 2rem;
-        font-size: 21px;
+        font-size: 18px;
     }
     footer {
         padding-bottom: 5rem;
@@ -440,7 +440,7 @@
 
     #footer-contato>h2 {
         font-family: "Poppins";
-        font-size: 28px;
+        font-size: 20px;
         font-weight: 500;
         margin-top: 10px;
         width: 250px;
@@ -469,7 +469,7 @@
         font-family: "Poppins";
         font-weight: 600;
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         width: 100%;
         text-align: left;
         margin-top: 10px;
@@ -583,7 +583,7 @@
         align-items: center;
         color: white;
         margin-left: 2rem;
-        font-size: 21px;
+        font-size: 20px;
     }
     footer {
         padding-bottom: 5rem;
@@ -641,7 +641,7 @@
         font-family: "Poppins";
         font-weight: 600;
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         width: 100%;
         text-align: left;
         margin-top: 10px;
