@@ -41,7 +41,8 @@ export class VideosPoliticoComponent implements OnInit {
     //change css too
     const cards = document.querySelectorAll('.video-card') as NodeListOf<HTMLElement>;
    for (let i = 0; i < cards.length; i++) {
-      cards[i].style.width = '50%';
+      cards[i].style.width = '44%';
+      cards[i].style.height = 'auto';
     }
 } else if (width <= 1200) {
       this.displayedVideos = this.videos.slice(0, 3);
