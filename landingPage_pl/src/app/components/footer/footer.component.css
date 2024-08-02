@@ -1,10 +1,11 @@
 * {
-
     margin: 0px;
     margin-top: 20rem;
     padding: 0px;
     box-sizing: border-box;
     z-index: 0;
+    font-family: "Poppins";
+      
 }
 
 #contato i {margin-right: 10px;}
@@ -36,6 +37,8 @@
         font-size: 30px;
     }
     footer {
+        padding-bottom: 5rem;
+        padding-top: 2rem;
         
         background: linear-gradient(to bottom, #04328C 0%, #010E26 100%);
         
@@ -58,7 +61,7 @@
     }
 
     #footer-contato>h2 {
-        font-family: "Encode Sans Expanded", sans-serif;
+        font-family: "Poppins";
         font-size: 28px;
         font-weight: 500;
         margin-top: 10px;
@@ -84,7 +87,7 @@
     }
 
     #contato-1>p {
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins";
         font-weight: 600;
         color: white;
         font-size: 12px;
@@ -124,7 +127,7 @@
     }
 
     #contato-2>ul>li>p {
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 10px;
         color: white;
@@ -143,8 +146,8 @@
 
     #email,
     i {
-        font-size: 18px;
-        margin-left: 1.2rem;
+        font-size: 1.5rem;
+        margin-left: 0.1rem;
         background: white;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -163,7 +166,7 @@
         position: relative;
         width: 120px;
         height: 35px;
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 10px;
         color: white;
@@ -224,6 +227,8 @@
 
     
     footer {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
         background: linear-gradient(to bottom, #04328C 0%, #010E26 100%);
         align-items: flex-start;
         display: flex;
@@ -246,7 +251,7 @@
     }
 
     #footer-contato>h2 {
-        font-family: "Encode Sans Expanded", sans-serif;
+        font-family: "Poppins";
         font-size: 28px;
         font-weight: 500;
         margin-top: 10px;
@@ -275,7 +280,7 @@
     }
 
     #contato-1>p {
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins";
         font-weight: 600;
         color: white;
         font-size: 13px;
@@ -313,7 +318,7 @@
     }
 
     #contato-2>ul>li>p {
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 10px;
         color: white;
@@ -344,7 +349,7 @@
         position: relative;
         width: 140px;
         height: 45px;
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 12px;
         color: white;
@@ -409,6 +414,8 @@
         font-size: 30px;
     }
     footer {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
         
         background: linear-gradient(to bottom, #04328C 0%, #010E26 100%);
         align-items: flex-start;
@@ -432,7 +439,7 @@
     }
 
     #footer-contato>h2 {
-        font-family: "Encode Sans Expanded", sans-serif;
+        font-family: "Poppins";
         font-size: 28px;
         font-weight: 500;
         margin-top: 10px;
@@ -459,7 +466,7 @@
     }
 
     #contato-1>p {
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins";
         font-weight: 600;
         color: white;
         font-size: 20px;
@@ -497,7 +504,7 @@
     }
 
     #contato-2>ul>li>p {
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 12px;
         color: white;
@@ -516,8 +523,8 @@
 
     #email,
     i {
-        font-size: 30px;
-        margin-left: 3rem;
+        font-size: 1.5rem;
+        margin-left: 0.1m;
         background: white;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -528,7 +535,7 @@
         position: relative;
         width: 150px;
         height: 45px;
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 12px;
         color: white;
@@ -579,6 +586,8 @@
         font-size: 30px;
     }
     footer {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
         
         background: linear-gradient(to bottom, #04328C 0%, #010E26 100%);
         align-items: flex-start;
@@ -602,7 +611,7 @@
     }
 
     #footer-contato>h2 {
-        font-family: "Encode Sans Expanded", sans-serif;
+        font-family: "Poppins";
         font-size: 28px;
         font-weight: 500;
         margin-top: 10px;
@@ -629,7 +638,7 @@
     }
 
     #contato-1>p {
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins";
         font-weight: 600;
         color: white;
         font-size: 25px;
@@ -661,7 +670,7 @@
     }
 
     #contato-2>ul>li>p {
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 24px;
         color: white;
@@ -680,8 +689,8 @@
 
     #email,
     i {
-        font-size: 40px;
-        margin-left: 5rem;
+        font-size: 1.5rem;
+        margin-left: 0.1m;
         background: white;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -692,7 +701,7 @@
         position: relative;
         width: 170px;
         height: 45px;
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 12px;
         color: white;
@@ -760,6 +769,8 @@
 
     
     footer {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
         background: linear-gradient(to bottom, #04328C 0%, #010E26 100%);
         align-items: flex-start;
 
@@ -786,7 +797,7 @@
     }
 
     #footer-contato>h2 {
-        font-family: "Encode Sans Expanded", sans-serif;
+        font-family: "Poppins";
         font-size: 40px;
         font-weight: 500;
         margin-top: 10px;
@@ -822,7 +833,7 @@
     }
 
     #contato-1>p {
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins";
         font-weight: 600;
         color: white;
         font-size: 18px;
@@ -864,7 +875,7 @@
     }
 
     #contato-2>ul>li>p {
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 18px;
         color: white;
@@ -884,8 +895,8 @@
 
     #email,
     i {
-        font-size: 40px;
-        margin-left: 5rem;
+        font-size: 1.5rem;
+        margin-left: 0.1m;
 
         background: white;
         -webkit-text-fill-color: transparent;
@@ -901,7 +912,7 @@
         position: relative;
         width: 200px;
         height: 45px;
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 16px;
         color: white;
@@ -969,6 +980,8 @@
 
     
     footer {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
         background: linear-gradient(to bottom, #04328C 0%, #010E26 100%);
         align-items: flex-start;
 
@@ -994,7 +1007,7 @@
     }
 
     #footer-contato>h2 {
-        font-family: "Encode Sans Expanded", sans-serif;
+        font-family: "Poppins";
         font-size: 40px;
         font-weight: 500;
         margin-top: 10px;
@@ -1031,7 +1044,7 @@
     }
 
     #contato-1>p {
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins";
         font-weight: 600;
         color: white;
         font-size: 18px;
@@ -1080,7 +1093,7 @@
     }
 
     #contato-2>ul>li>p {
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 18px;
         color: white;
@@ -1100,8 +1113,8 @@
 
     #email,
     i {
-        font-size: 40px;
-        margin-left: 5rem;
+        font-size: 1.5rem;
+        margin-left: 0.1m;
 
         background: white;
         -webkit-text-fill-color: transparent;
@@ -1117,7 +1130,7 @@
         position: relative;
         width: 200px;
         height: 45px;
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 16px;
         color: white;
@@ -1173,6 +1186,8 @@
         font-size: 30px;
     }
     footer {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
         
         background: linear-gradient(to bottom, #04328C 0%, #010E26 100%);
         align-items: flex-start;
@@ -1198,7 +1213,7 @@
     }
 
     #footer-contato>h2 {
-        font-family: "Encode Sans Expanded", sans-serif;
+        font-family: "Poppins";
         font-size: 40px;
         font-weight: 500;
         margin-top: 10px;
@@ -1235,7 +1250,7 @@
     }
 
     #contato-1>p {
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins";
         font-weight: 600;
         color: white;
         font-size: 18px;
@@ -1296,7 +1311,7 @@
     }
 
     #contato-2>ul>li>p {
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 18px;
         color: white;
@@ -1305,8 +1320,8 @@
 
     #email,
     i {
-        font-size: 40px;
-        margin-left: 5rem;
+        font-size: 1.5rem;
+        margin-left: 0.1m;
         
         background: white;
         -webkit-text-fill-color: transparent;
@@ -1322,7 +1337,7 @@
         position: relative;
         width: 200px;
         height: 45px;
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 16px;
         color: white;
@@ -1381,6 +1396,8 @@
 
     
     footer {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
         background: linear-gradient(to bottom, #04328C 0%, #010E26 100%);
         align-items: flex-start;
 
@@ -1405,7 +1422,7 @@
     }
 
     #footer-contato>h2 {
-        font-family: "Encode Sans Expanded", sans-serif;
+        font-family: "Poppins";
         font-size: 40px;
         font-weight: 500;
         margin-top: 10px;
@@ -1442,7 +1459,7 @@
     }
 
     #contato-1>p {
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins";
         font-weight: 600;
         color: white;
         font-size: 18px;
@@ -1501,7 +1518,7 @@
     }
 
     #contato-2>ul>li>p {
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 18px;
         color: white;
@@ -1510,8 +1527,8 @@
 
     #email,
     i {
-        font-size: 40px;
-        margin-left: 2rem;
+        font-size: 1.5rem;
+        margin-left: 0.1m;
 
         background: white;
         -webkit-text-fill-color: transparent;
@@ -1526,7 +1543,7 @@
         position: relative;
         width: 200px;
         height: 45px;
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 16px;
         color: white;
@@ -1587,6 +1604,8 @@
         font-size: 30px;
     }
     footer {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
         
         background: linear-gradient(to bottom, #04328C 0%, #010E26 100%);
         align-items: flex-start;
@@ -1612,7 +1631,7 @@
     }
 
     #footer-contato>h2 {
-        font-family: "Encode Sans Expanded", sans-serif;
+        font-family: "Poppins";
         font-size: 40px;
         font-weight: 500;
         margin-top: 10px;
@@ -1649,7 +1668,7 @@
     }
 
     #contato-1>p {
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins";
         font-weight: 600;
         color: white;
         font-size: 18px;
@@ -1701,7 +1720,7 @@
     }
 
     #contato-2>ul>li>p {
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 18px;
         color: white;
@@ -1710,8 +1729,8 @@
 
     #email,
     i {
-        font-size: 40px;
-        margin-left: 1px;
+        font-size: 1.5rem;
+        margin-left:0.1x;
 
         background: white;
         -webkit-text-fill-color: transparent;
@@ -1726,7 +1745,7 @@
         position: relative;
         width: 200px;
         height: 45px;
-        font-family: "Inria Sans", sans-serif;
+        font-family: "Poppins";
         font-weight: 400;
         font-size: 16px;
         color: white;

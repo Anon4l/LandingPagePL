@@ -1,3 +1,6 @@
+* {
+  font-family: "Poppins";
+}
 
 .politico-container {
   text-align: center;
@@ -11,7 +14,11 @@
   padding-bottom: 14rem;
   background-position: center;
 }
-  
+
+.cardhover{
+  height: 35rem;
+}  
+
   .politico-container h2 {
     font-size: 40px;
     margin-bottom: 10px;
@@ -40,8 +47,16 @@
     width: calc(20.333% - 40px); /* Three cards per row, minus the gap */
     height: 20rem;
     color: white;
+    transition: all 0.5s ease-in-out; 
+    overflow: hidden;
   }
-  
+
+  .hoverxd{
+    background-color: #f2b705;
+    display: none;
+  }
+ 
+
   .card-icon {
     display: flex;
     justify-content: center;
