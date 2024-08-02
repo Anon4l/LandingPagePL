@@ -15,6 +15,8 @@
     margin-right: 1vw;
 }
 
+
+
 #efeito {
     color: rgb(248, 248, 248);
     text-decoration: none;
@@ -29,8 +31,13 @@
     -webkit-background-clip: text,padding-box;
             background-clip: text,padding-box;
     transition: 0.5s;
+   
 }
 
 #efeito:hover {
+    /* make it smooth */
     --_p: 100%;
 }
+
+/*also make it flash every 2 seconds*/
+
