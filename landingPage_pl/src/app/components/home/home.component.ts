@@ -9,7 +9,7 @@ import { Component, AfterViewInit } from '@angular/core';
 })
 export class HomeComponent implements AfterViewInit {
   ngAfterViewInit() {
-    const elements = document.querySelectorAll('.apresentacao, .img');
+    const elements = document.querySelectorAll('#home, .img');
     elements.forEach(el => {
       el.classList.add('visible');
     });
