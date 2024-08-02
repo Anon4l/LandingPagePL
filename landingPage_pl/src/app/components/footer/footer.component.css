@@ -34,7 +34,7 @@
         align-items: center;
         color: white;
         margin-left: 1px;
-        font-size: 30px;
+        font-size: 21px;
     }
     footer {
         padding-bottom: 5rem;
@@ -104,7 +104,7 @@
 
     #contato-2>p {
         color: white;
-        font-size: 30px;
+        font-size: 21px;
     }
 
     #contato-2>ul {
@@ -222,7 +222,7 @@
         align-items: top;
         color: white;
         margin-left: 1px;
-        font-size: 30px;
+        font-size: 21px;
     }
 
     
@@ -337,7 +337,7 @@
 
     #email,i,#insta
      {
-        font-size: 30px;
+        font-size: 21px;
         margin-left: 1rem;
         background: white;
         -webkit-text-fill-color: transparent;
@@ -411,7 +411,7 @@
         align-items: center;
         color: white;
         margin-left: 2rem;
-        font-size: 30px;
+        font-size: 21px;
     }
     footer {
         padding-bottom: 5rem;
@@ -583,7 +583,7 @@
         align-items: center;
         color: white;
         margin-left: 2rem;
-        font-size: 30px;
+        font-size: 21px;
     }
     footer {
         padding-bottom: 5rem;
@@ -764,7 +764,7 @@
         align-items: center;
         color: white;
         margin-left: 2rem;
-        font-size: 30px;
+        font-size: 21px;
     }
 
     
@@ -836,7 +836,7 @@
         font-family: "Poppins";
         font-weight: 600;
         color: white;
-        font-size: 18px;
+        font-size: 21px;
         width: 100%;
         text-align: left;
         margin-top: 10px;
@@ -975,7 +975,7 @@
         align-items: center;
         color: white;
         margin-left: 2rem;
-        font-size: 30px;
+        font-size: 21px;
     }
 
     
@@ -1047,7 +1047,7 @@
         font-family: "Poppins";
         font-weight: 600;
         color: white;
-        font-size: 18px;
+        font-size: 21px;
         width: 100%;
         text-align: left;
         margin-top: 10px;
@@ -1183,7 +1183,7 @@
         align-items: center;
         color: white;
         margin-left: 2rem;
-        font-size: 30px;
+        font-size: 21px;
     }
     footer {
         padding-bottom: 5rem;
@@ -1253,7 +1253,7 @@
         font-family: "Poppins";
         font-weight: 600;
         color: white;
-        font-size: 18px;
+        font-size: 21px;
         width: 100%;
         text-align: left;
         margin-top: 10px;
@@ -1391,7 +1391,7 @@
         align-items: center;
         color: white;
         margin-left: 2rem;
-        font-size: 30px;
+        font-size: 21px;
     }
 
     
@@ -1462,7 +1462,7 @@
         font-family: "Poppins";
         font-weight: 600;
         color: white;
-        font-size: 18px;
+        font-size: 21px;
         width: 100%;
         text-align: left;
         margin-top: 10px;
@@ -1601,7 +1601,7 @@
         align-items: center;
         color: white;
         margin-left: 2rem;
-        font-size: 30px;
+        font-size: 21px;
     }
     footer {
         padding-bottom: 5rem;
@@ -1665,13 +1665,14 @@
 
         border-right: 3px solid white;
         margin-bottom: 40px;
+        margin-right: 7rem;
     }
 
     #contato-1>p {
         font-family: "Poppins";
         font-weight: 600;
         color: white;
-        font-size: 18px;
+        font-size: 21px;
         width: 100%;
         text-align: left;
         margin-top: 10px;

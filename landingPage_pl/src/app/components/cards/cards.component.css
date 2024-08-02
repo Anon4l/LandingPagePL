@@ -5,7 +5,7 @@
 .politico-container {
   text-align: center;
   align-items: center;
-  padding-top: 20rem;
+  padding-top: 15rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/backgroundadriano.png); 
   background-size: cover;
   color: white;
@@ -15,98 +15,106 @@
   background-position: center;
 }
 
-.cardhover{
+.cardhover {
   height: 35rem;
 }  
 
-  .politico-container h2 {
-    font-size: 40px;
-    margin-bottom: 10px;
-    line-height: 3rem;
-  }
-  
-  .politico-container p {
-    font-size: 25px;
-    margin-bottom: 20px;
-    font-weight: 700;
-  }
-  
-  .cards-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
+.politico-container h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 3rem;
+}
+
+.politico-container p {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.cards-grid {
+  padding-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
 .card {
-    background: #1E3A8A; /* Blue background for cards */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    text-align: center;
-    width: calc(20.333% - 40px); /* Three cards per row, minus the gap */
-    height: 20rem;
-    color: white;
-    transition: all 0.5s ease-in-out; 
-    overflow: hidden;
-  }
+  background: #1E3A8A; /* Blue background for cards */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: calc(20.333% - 40px); /* Three cards per row, minus the gap */
+  height: '20rem';
+  color: white;
+  transition: all 0.5s ease-in-out; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 
-  .hoverxd{
-    background-color: #f2b705;
-    display: none;
-  }
- 
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
 
-  .card-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-  }
-  
-  .icon-background {
-    background: #f2b705; /* Yellow background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 9rem;
-    height: 5rem;
-    border-radius: 8px; /* Rounded corners for the yellow square */
-    font-size: 3.6rem;
-  }
-  
-  .card h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
+.icon-background {
+  background: #f2b705; /* Yellow background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 5rem;
+  border-radius: 8px; /* Rounded corners for the yellow square */
+  font-size: 3.6rem;
+}
 
-  .card a {
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-  }
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
 
-  .card h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    font-weight: 400;
+.card a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.card h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.card-text {
+  overflow: hidden; /* Enable scrolling for overflowed text */
+  flex-grow: 1;
+  opacity: 0;
+  text-align: justify;
+  font-weight: 400;
+  font-family: "Poppins";
+  transition: all 0.5s ease-in-out; 
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .card {
+    width: calc(50% - 40px); /* Two cards per row */
   }
-  
-  .card p {
-    font-size: 18px;
-    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 40px); /* One card per row */
   }
-  
-  /* Media queries for responsiveness */
-  @media (max-width: 1200px) {
-    .card {
-      width: calc(50% - 40px); /* Two cards per row */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .card {
-      width: calc(100% - 40px); /* One card per row */
-    }
-  }
+}

@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule]
 })
 export class CardsComponent implements OnInit, AfterViewInit {
+
   propostas = [
     { title: 'Mais de 1.300 Requerimentos', icone: '📄',text:"Ele apresentou mais de 1.300 requerimentos, buscando respostas e soluções para as necessidades de nossa população."},
     { title: 'Mais de 2.000 Indicações', icone: '📊' ,text:"Com uma visão clara para o progresso da cidade, fez mais de 2.000 indicações que resultaram em melhorias significativas para nossa comunidade."},
@@ -29,23 +30,45 @@ export class CardsComponent implements OnInit, AfterViewInit {
    
   }
   ngAfterViewInit(): void {
+    
     const cards = document.querySelectorAll('.card');
-    console.log(cards)
     cards.forEach((card) => {
+      this.getComputedHeight(card as HTMLElement);
       card.addEventListener('click', () => this.checkClick(card));
     });
   }
 
+  arrcomputedHeight: any[] = [];
 
-    private checkClick(card:any): void {
-      // keep on hover css on till next click
-     if(card.style.height == '35rem')
-      card.style.height = '20rem';
-     else
-      card.style.height = '35rem';
-
-
+private getComputedHeight(card: HTMLElement): void
+{ const cardTextElement = card.querySelector('.card-text');
+   const computedHeight = card.getBoundingClientRect().height;
+   //assign id to the card computed
+   card.style.height = 'auto';
+   card.setAttribute('data-id', this.arrcomputedHeight.length.toString());
+     this.arrcomputedHeight.push({"height":computedHeight,"id":card.getAttribute('data-id')});
+    card.style.height = '20rem';
     }
+    
+
+  private checkClick(card:any): void {
+    const cardTextElement = card.querySelector('.card-text');
+    const computedHeight = this.arrcomputedHeight[card.getAttribute('data-id')].height;
+        const expandedHeight = (computedHeight) + 'px';
+        const isExpanded = card.classList.contains('expanded');
+        if (isExpanded) {
+          card.style.height = '20rem';
+          cardTextElement.style.opacity = '0';
+          card.classList.remove('expanded');
+        } else {
+          card.style.height = expandedHeight;
+          cardTextElement.style.opacity = '1';
+          card.classList.add('expanded');
+        }
+    } 
+  
+
+
 
 
   private checkScroll(): void {
