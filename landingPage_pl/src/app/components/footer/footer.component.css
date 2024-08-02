@@ -20,7 +20,7 @@
 }
 
 /* Celular */
-@media screen and (min-width: 360px) and (max-width: 428px) {
+@media screen and (max-width: 428px) {
 
     #qr{
         /*size*/

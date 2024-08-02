@@ -47,12 +47,12 @@ p.oferece{
     display: flex;
     align-items: center;
     margin-bottom: 4rem;
-    padding-left: 24.375rem;
-    padding-right: 24.375rem;
+    padding-left: 24.375vw;
+    padding-right: 24.375vw;
 }
 
 h2{
-    font-size: 1.625rem;
+    font-size: 1.4vw;
     font-family: 'Poppins';
 }
 
@@ -68,7 +68,7 @@ h2{
 .itens-p{
     font-family: 'Poppins';
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0;
@@ -164,7 +164,7 @@ h3{
     }
     
     h2{
-        font-size: 1.425rem;
+        font-size: 1.8vw;
         font-family: 'Poppins';
     }
     
@@ -176,7 +176,7 @@ h3{
     }
     
     .itens-p{
-        font-size: 1.1rem;
+        font-size: 1.6vw;
     }
     
     
@@ -198,13 +198,14 @@ h3{
     
     
     h3{
-        font-size: 1.6rem;
+        font-size: 2.4vw;
         margin-bottom: 2.2rem;
     
     }
     
     .futuro-p{
-        font-size: 1.4rem;
+        font-size: 2vw;
+        margin-bottom: 1rem;
     }
 }
 
@@ -233,13 +234,13 @@ h3{
     }
     
     .itens-oferecimentos{
-        padding-left: 10rem;
-        padding-right: 10rem;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     .borda img{
-        width: 70px;
-        height: 70px;
+        width: 10vw;
+        height: 10vh;
     }
     
     h2{
@@ -250,7 +251,7 @@ h3{
         border: 3px solid black;
         border-radius: 16px;
         padding: 12px;
-        height: 11vh;
+        height: 14vh;
     }
     
     .itens-p{
@@ -263,27 +264,28 @@ h3{
     }
     
     .futuro{
-        padding-left: 1.1rem;
-        padding-right: 1.1em;
+        padding-left: 0.7rem;
+        padding-right: 0.7em;
         margin-top: 13.25rem;
         margin-bottom: 9.688rem;
     }
 
     .futuro img{
         width: 80%;
-        height: 60vw;
+        height: 80vw;
     }
     
     h3{
-        font-size: 1.2rem;
-        margin-bottom: 2.2rem;
+        font-size: 2.7vw;
+        margin-bottom: 1.6rem;
         
     }
     
     .futuro-p{
-        font-size: 1rem;
+        font-size: 2.4vw;
         margin-right: 1rem;
         margin-left: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
