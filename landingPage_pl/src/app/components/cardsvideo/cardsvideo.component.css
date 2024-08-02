@@ -1,4 +1,27 @@
 
+#inst {
+    background: linear-gradient(to right,#ff9400, #F20505, #d92b76);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        font-family: 'Poppins';
+        transition: font-size 0.5s ease-in-out; 
+       
+    }
+
+    #inst:hover {
+        font-size: 3rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    
+    .videos-container a{
+
+        text-decoration: none;
+    }
+
 .videos-container {
     text-align: center;
     padding: 20px;
@@ -8,6 +31,7 @@
     opacity: 0; /* Start with hidden */
     transform: translateY(20px); /* Start with translated position */
 }
+
 
 
 .videos-container h1 {
@@ -48,9 +72,9 @@
 }
 
 .video-card:hover {
-   -webkit-animation: scale 0.3s;
-    animation: scale 0.3s;
-   box-shadow: 0 4px 60px rgba(0, 0, 0, 0.70);
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.70);
+    transition: all 0.5s ease;
+   
 }
 
 .video-title {
@@ -73,5 +97,9 @@
     border-radius: 20px;
 }
 .img-video:hover {
-    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    
+
+
 }
