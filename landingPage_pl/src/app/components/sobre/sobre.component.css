@@ -24,6 +24,10 @@ p{
     text-align: justify;
 }
 
+.quem{
+    margin-top: 2rem;
+}
+
 .conteudo {
     display: flex;
     flex-direction: column;

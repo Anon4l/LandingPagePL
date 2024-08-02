@@ -11,8 +11,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   sections: { id: string, linkId: string }[] = [
     { id: 'home', linkId: 'home-link' },
     { id: 'sobre', linkId: 'sobre-link' },
-    { id: 'politico-container', linkId: 'politico-container' },
-    { id: 'videos-container', linkId: 'videos-container' }
+    { id: 'videocontainer', linkId: 'videocontainer-link' },
+    { id: 'compromisso', linkId: 'compromisso-link' },
+    { id: 'footer-contato', linkId: 'footer-contato-link' }
   ];
 
   @HostListener('window:scroll', ['$event'])
