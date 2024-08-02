@@ -75,13 +75,13 @@ img {
     transition: opacity 3s ease, transform 2s ease;
 }
 
-.apresentacao {
+#home {
     opacity: 0;
     transform: translateX(-400px);
     transition: opacity 3s ease, transform 2s ease;
 }
 
-.apresentacao.visible,
+#home.visible,
 .img.visible {
     opacity: 1;
     transform: translateY(0);
