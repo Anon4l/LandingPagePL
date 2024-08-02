@@ -330,7 +330,7 @@ img {
     #home {
         display: flex;
         flex-direction: column;
-        margin-top: 11vh;
+        margin-top: 10vh;
         justify-content: center;
         align-items: center;
     }

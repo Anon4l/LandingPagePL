@@ -235,6 +235,7 @@ input {
     flex-direction: column;
     align-items: flex-end;
     width: 30%;
+    margin-right: 0;
   }
   
   .links {
@@ -395,6 +396,7 @@ input {
     justify-content: center;
     align-items: flex-end;
     width: 30%;
+
   }
 
   .links {
@@ -506,7 +508,7 @@ input {
     z-index: 998;
     width: 35px;
     margin-top: 1rem;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     cursor: pointer;
   }
 

@@ -111,6 +111,10 @@ h3{
 
 }
 
+.futuro img{
+    border-radius: 16px;
+}
+
 .futuro-p{
     font-size: 2rem;
     font-weight: 300;
@@ -239,18 +243,18 @@ h3{
     }
     
     h2{
-        font-size: 1.2rem;
+        font-size: 2.5vw;
     }
     
     .borda{
         border: 3px solid black;
         border-radius: 16px;
         padding: 12px;
-        height: 100px;
+        height: 11vh;
     }
     
     .itens-p{
-        font-size: 0.9rem;
+        font-size: 1.9vw;
     }
     
     
