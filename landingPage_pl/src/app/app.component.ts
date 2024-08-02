@@ -9,11 +9,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { VideosPoliticoComponent } from './components/cardsvideo/cardsvideo.component';
 import { CompromissoComponent } from './compromisso/compromisso.component';
-
+import { SubfooterComponent } from './components/subfooter/subfooter.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [VideosPoliticoComponent, CardsComponent, FooterComponent, RouterOutlet, HeaderComponent, HomeComponent, ContatoComponent, SobreComponent, PropostasComponent, CompromissoComponent],
+  imports: [SubfooterComponent,VideosPoliticoComponent, CardsComponent, FooterComponent, RouterOutlet, HeaderComponent, HomeComponent, ContatoComponent, SobreComponent, PropostasComponent, CompromissoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

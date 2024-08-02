@@ -36,7 +36,6 @@ export class VideosPoliticoComponent implements OnInit {
 
   private updateDisplayedVideos(): void {
     const width = window.innerWidth;
-    console.log(width);
     if (width <= 768) {
       this.displayedVideos = this.videos.slice(0, 2);
     //change css too
