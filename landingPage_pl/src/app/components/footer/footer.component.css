@@ -32,7 +32,7 @@
     #contato-2>p {
         align-items: center;
         color: white;
-        margin-left: 2rem;
+        margin-left: 1px;
         font-size: 30px;
     }
     footer {
@@ -218,7 +218,7 @@
     #contato-2>p {
         align-items: top;
         color: white;
-        margin-left: 2rem;
+        margin-left: 1px;
         font-size: 30px;
     }
 
@@ -1511,7 +1511,7 @@
     #email,
     i {
         font-size: 40px;
-        margin-left: 15rem;
+        margin-left: 2rem;
 
         background: white;
         -webkit-text-fill-color: transparent;
@@ -1711,7 +1711,7 @@
     #email,
     i {
         font-size: 40px;
-        margin-left: 15rem;
+        margin-left: 1px;
 
         background: white;
         -webkit-text-fill-color: transparent;

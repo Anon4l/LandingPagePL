@@ -2,13 +2,13 @@
 .politico-container {
   text-align: center;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 20rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/backgroundadriano.png); 
   background-size: cover;
   color: white;
   opacity: 0; /* Start hidden */
   transition: opacity 0.5s, transform 0.5s;
-  padding-bottom: 12rem;
+  padding-bottom: 14rem;
   background-position: center;
 }
   
@@ -37,8 +37,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     text-align: center;
-    width: calc(25.333% - 40px); /* Three cards per row, minus the gap */
-    height: auto;
+    width: calc(20.333% - 40px); /* Three cards per row, minus the gap */
+    height: 20rem;
     color: white;
   }
   
@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 1rem;
   }
   
@@ -55,19 +55,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: auto;
+    width: 9rem;
+    height: 5rem;
     border-radius: 8px; /* Rounded corners for the yellow square */
-    font-size: 40px;
+    font-size: 3.6rem;
   }
   
   .card h2 {
     font-size: 30px;
     margin-bottom: 10px;
   }
+
+  .card a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+
+  .card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
   
   .card p {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
   }
   
