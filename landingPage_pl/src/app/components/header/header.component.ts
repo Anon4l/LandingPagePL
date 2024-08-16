@@ -66,7 +66,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   highlightMenuItem() {
     const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    let offsetDistance = 650;
+    let offsetDistance = 500;
     if (window.innerWidth < 450) {
       offsetDistance = 300;
     }

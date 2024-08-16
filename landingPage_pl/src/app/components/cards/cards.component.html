@@ -3,16 +3,15 @@
   <p>Na Câmara Municipal, Adriano Piemonte tem se destacado por<br> seu trabalho incansável e eficaz:</p>
   <div class="cards-grid">
     <div class="card" *ngFor="let proposta of propostas">
-      <b><h2>{{ proposta.title }}</h2></b>
-      <div class="card-icon">
+      <div class="card-header">
         <div class="icon-background">{{ proposta.icone }}</div>
+        <h2>{{ proposta.title }}</h2>
+        <a id="link">
+          <img src="../../../assets/Expand_down.png" alt="Flecha para abrir os cards" class="flecha">
+        </a>
       </div>
-      <a id="link">
-        <h3>LER MAIS</h3>
-      </a>
-      <br>
       <div class="card-text">
-        <p>{{proposta.text}}</p>
+        <p [innerHTML]="proposta.text"></p>
       </div>
     </div>
   </div>
