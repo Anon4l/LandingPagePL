@@ -2,7 +2,7 @@
   <h2>O Trabalho de Adriano na Câmara Municipal</h2>
   <p>Na Câmara Municipal, Adriano Piemonte tem se destacado por<br> seu trabalho incansável e eficaz:</p>
   <div class="cards-grid">
-    <div class="card" *ngFor="let proposta of propostas">
+    <div class="card" *ngFor="let proposta of propostas; let i = index">
       <div class="card-header">
         <div class="icon-background">{{ proposta.icone }}</div>
         <h2>{{ proposta.title }}</h2>
@@ -12,7 +12,10 @@
       </div>
       <div class="card-text">
         <p [innerHTML]="proposta.text"></p>
+        <ng-container *ngIf="i === 0">
+          <a class="inst" target="_blank" href="https://administrativo.camarasantos.sp.gov.br/dispositivo/customizado_publico/legislativo/busca_documento_pub/filtro.php?pesquisa_assunto_autor%5Btipo%5D=&pesquisa_assunto_autor%5Bautor%5D=244&pesquisa_assunto_autor%5Bassunto%5D="><p class="inst" >Veja todas as Propostas</p></a>
+        </ng-container>
       </div>
     </div>
+    </div>
   </div>
-</div>

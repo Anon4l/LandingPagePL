@@ -49,6 +49,27 @@
   margin-left: 1vw;
 }
 
+.inst {
+  background: linear-gradient(to right,#fafafa, #ffffff, #ffffff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+      font-family: 'Poppins';
+      transition: all 0.5s ease-in-out; 
+      
+      display: flex;
+      justify-content: center;
+      scale: 1.2;
+  }
+
+  .inst:hover {
+      scale:1.3;
+      text-decoration: underline;
+      transition: all 0.5s ease-in-out;
+  }
+
+
 .card {
   background: #04328C; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
