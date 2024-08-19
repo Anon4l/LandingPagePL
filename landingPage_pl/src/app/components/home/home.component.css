@@ -1,7 +1,7 @@
 #home {
     display: flex;
     flex-direction: column;
-    margin-top: 15vh;
+    margin-top: 12vh;
     justify-content: center;
     align-items: center;
 }
@@ -99,7 +99,7 @@ img {
 /* Telas Pequenas */
 @media screen and (max-width: 1025px) {
     #home {
-        margin-top: 12vh;
+        margin-top: 10vh;
     }
     
     h1 {
@@ -183,7 +183,7 @@ img {
 /* Tablets Maiores */
 @media screen and (max-width: 835px) {
     #home {
-        margin-top: 11vh;
+        margin-top: 9vh;
     }
 
     h1 {
@@ -228,7 +228,7 @@ img {
 /* Tablet */
 @media screen and (max-width: 769px) {
     #home {
-        margin-top: 12vh;
+        margin-top: 10vh;
     }
     
     h1 {
@@ -330,7 +330,7 @@ img {
     #home {
         display: flex;
         flex-direction: column;
-        margin-top: 10vh;
+        margin-top: 8vh;
         justify-content: center;
         align-items: center;
     }
