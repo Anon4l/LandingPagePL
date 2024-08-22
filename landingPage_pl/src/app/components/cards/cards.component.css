@@ -135,6 +135,7 @@ img{
 .card.expanded .card-text {
   max-height: 200px; 
   opacity: 1;
+  transition: max-height 1s ease-in-out;
 }
 
 .flecha {
@@ -166,17 +167,17 @@ img{
 
 @media (max-width: 768px) {
   .icon-background {
-    font-size: 3.6vw;
+    font-size: 4vw;
     width: 11vw;
     height: 5vh;
     margin-left: 1vw;
   }
 
   .card h2 {
-    font-size: 1.6vw;
+    font-size: 2vw;
   }
 
   .card-text p {
-    font-size: 1.2vw;
+    font-size: 1.6vw;
   }
 }
