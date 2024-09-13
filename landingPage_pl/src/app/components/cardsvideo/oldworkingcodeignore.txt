@@ -1,0 +1,294 @@
+css:
+
+#inst {
+    background: linear-gradient(to right,#ff9400, #F20505, #d92b76);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        font-family: 'Poppins';
+        transition: font-size 0.5s ease-in-out; 
+       
+    }
+
+    #inst:hover {
+        font-size: 3rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    
+    .videos-container a{
+
+        text-decoration: none;
+    }
+
+.videos-container {
+    text-align: center;
+    padding: 20px;
+    padding-top: 5rem;
+    
+    padding-bottom: 10rem;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-in-out;
+    opacity: 0; /* Start with hidden */
+    transform: translateY(20px); /* Start with translated position */
+}
+
+
+
+.videos-container h1 {
+    color: black; /* Darker color for text on white background */
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.videos-container h2 {
+    color: #333; /* Darker color for text on white background */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.videos-container h2 span {
+    
+    font-weight: bold;
+}
+
+.videos-grid {
+    width: 100%;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transform: 0.5s ease-in-out;
+}
+
+.video-card {
+    background: #e0e0e0; /* Light grey background for cards */
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 40px); /* Three cards per row, minus the gap */
+    height:20rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+}
+
+
+
+.video-card:hover {
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.70);
+    transition: all 0.5s ease;
+   
+}
+
+@media (max-width: 1200px) {
+    .video-card {
+      flex: 0 0 calc(33.333% - 20px); /* 3 cards on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .video-card {
+      flex: 0 0 calc(50% - 20px); /* 2 cards on small screens */
+    }
+  }
+
+.video-title {
+    font-size: 16px;
+    color: #333; /* Darker color for text */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.video-description {
+    font-size: 14px;
+    color: #333; /* Darker color for text */
+}
+
+.img-video {
+    transform: 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 20px;
+}
+.img-video:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    
+
+
+}
+TS:
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { fromEvent } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-cardsvideo',
+  standalone: true,
+  templateUrl: './cardsvideo.component.html',
+  styleUrls: ['./cardsvideo.component.css'],
+  imports: [CommonModule]
+})
+export class VideosPoliticoComponent implements OnInit, AfterViewInit {
+  videos = [
+    { img: '../../../assets/adriano5.jpg', url: 'https://www.instagram.com/reel/C_dG0YNROlt/?igsh=ZXg4cTUwMW5veGZo' },
+    { img: '../../../assets/adriano6.jpg', url: 'https://www.instagram.com/reel/C_jTf3hRszY/?igsh=MWVhemZhOXp3amN1OA==' },
+    { img: '../../../assets/adriano1.jpg', url: 'https://www.instagram.com/p/C9Yc75XxR1H/?igsh=ZzNmNWl5ajV2bmow' },
+    { img: '../../../assets/adriano2.jpg', url: 'https://www.instagram.com/p/C8z3RUmxOUL/?igsh=cGQwNHozcW1tcGV3' },
+    { img: '../../../assets/adriano3.jpg', url: 'https://www.instagram.com/p/C8TFS3RN7NY/?igsh=YzJveGNlaDR5eTM2' },
+    { img: '../../../assets/adriano4.jpg', url: 'https://www.instagram.com/p/C7475WnA2_A/?igsh=ZmE4cDBuaHpodzVk' },
+  ];
+
+  displayedVideos = this.videos
+  currentStartIndex = 0;
+
+  ngOnInit(): void {
+    this.updateDisplayedVideos();
+    this.checkScroll();
+
+   
+    fromEvent(window, 'resize')
+      .pipe(debounceTime(100))
+      .subscribe(() => this.updateDisplayedVideos());
+
+   
+    fromEvent(window, 'scroll')
+      .pipe(debounceTime(100))
+      .subscribe(() => this.checkScroll());
+  }
+
+  ngAfterViewInit(): void {
+   
+    setInterval(() => this.nextVideos(), 2000);
+  }
+
+ 
+  nextVideos(): void {
+    const width = window.innerWidth;
+    let x = 4;
+  
+    // Adjust the number of visible cards based on screen width
+    if (width <= 768) {
+      x = 2;
+    } else if (width <= 1200) {
+      x = 3;
+    }
+  
+    const container = document.querySelector('.videos-grid') as HTMLElement;
+  
+    // Clone the first visible card
+    const nextCard = container.firstChild!.cloneNode(true) as HTMLElement;
+  
+    // Predict the next index (circular array logic)
+    let nextIndex = (this.currentStartIndex + x) % this.videos.length;
+  
+    // Update the image src for the cloned card with the correct next video
+    nextCard.querySelector('img')!.setAttribute('src', this.videos[nextIndex].img);
+  
+    // Append the cloned card to the container
+    
+    container.appendChild(nextCard);
+    
+
+    
+    // Slide effect (translate animation)
+    container.style.transition = 'transform 2s ease-in-out';
+    container.style.transform = 'translateX(-100%)';
+    setTimeout(() => {
+      // Reset transform after sliding
+      container.style.transform = 'translateX(0)';
+
+  
+      // Remove the extra card after the animation
+      container.removeChild(nextCard);
+      container.removeChild(container.firstChild!)
+  
+      // Shift the first video to the end of the list to maintain continuous rotation
+      const firstVideo = this.videos.shift();
+      if (firstVideo) {
+        this.videos.push(firstVideo);
+      }
+  
+      // Update displayed videos with the correct card sequence
+      this.updateDisplayedVideos();
+    }, 30);
+  }
+  
+  
+
+  prevVideos(): void {
+    const container = document.querySelector('.videos-container') as HTMLElement;
+
+   
+    const lastCard = container.lastElementChild!.cloneNode(true) as HTMLElement;
+    container.insertBefore(lastCard, container.firstChild);
+
+   
+    container.style.transition = 'none'; 
+    container.style.transform = 'translateX(-25%)'; 
+
+   
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        container.removeChild(lastCard); 
+
+       
+        if (this.currentStartIndex === 0) {
+          this.currentStartIndex = this.videos.length - this.displayedVideos.length;
+        } else {
+          this.currentStartIndex--;
+        }
+        this.updateDisplayedVideos();
+      }, 500);
+    });
+  }
+
+  
+  private updateDisplayedVideos(): void {
+    const width = window.innerWidth;
+    let visibleCount = 4;
+
+    if (width <= 768) {
+      visibleCount = 2;
+    } else if (width <= 1200) {
+      visibleCount = 3;
+    }
+
+    this.displayedVideos = this.videos.slice(this.currentStartIndex, this.currentStartIndex + visibleCount);
+  }
+
+  private updateCardStyles(visibleCount: number): void {
+    const cards = document.querySelectorAll('.video-card') as NodeListOf<HTMLElement>;
+
+    let cardWidth = 'calc(25% - 40px)';
+    if (visibleCount === 3) {
+      cardWidth = 'calc(33.333% - 40px)';
+    } else if (visibleCount === 2) {
+      cardWidth = '44%';
+    }
+
+    cards.forEach((card) => {
+      card.style.width = cardWidth;
+    });
+  }
+
+  private checkScroll(): void {
+    const container = document.querySelector('.videos-container') as HTMLElement;
+    const containerTop = container.getBoundingClientRect().top + window.scrollY;
+    const scrollY: number = window.scrollY;
+
+    if (scrollY + window.innerHeight >= containerTop + 400) {
+      container.style.opacity = '1';
+      container.style.transform = 'translateY(0)';
+    } else {
+      container.style.opacity = '0';
+      container.style.transform = 'translateY(20px)';
+    }
+  }
+}
